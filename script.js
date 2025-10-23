@@ -49,7 +49,7 @@ function handleOperator(nextOperator) {
 }
 
 const performCalculation = {
-    '/': (firstOperand, secondOperand) => firstOperand / secondOperand,
+    //'/': (firstOperand, secondOperand) => firstOperand / secondOperand,
     '*': (firstOperand, secondOperand) => firstOperand * secondOperand,
     '+': (firstOperand, secondOperand) => firstOperand + secondOperand,
     '-': (firstOperand, secondOperand) => firstOperand - secondOperand,
