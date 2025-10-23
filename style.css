@@ -1,0 +1,83 @@
+/* General Body Styling */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #4CAF50, #2196F3); /* Example gradient */
+    font-family: Arial, sans-serif;
+}
+
+/* Calculator Container */
+.calculator {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    max-width: 350px;
+}
+
+/* Display Area */
+.display {
+    width: 100%;
+    padding: 15px;
+    font-size: 2.5em;
+    text-align: right;
+    background-color: #222;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* Button Grid */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* Individual Buttons */
+.button {
+    width: 100%;
+    padding: 20px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 5px;
+    background-color: #555;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.button:hover {
+    background-color: #777;
+}
+
+.button.operator {
+    background-color: #f7931b; /* Orange for operators */
+}
+
+.button.operator:hover {
+    background-color: #ffaa33;
+}
+
+.button.clear {
+    background-color: #dc3545; /* Red for clear */
+}
+
+.button.clear:hover {
+    background-color: #e55c6b;
+}
+
+.button.equals {
+    background-color: #28a745; /* Green for equals */
+    grid-column: span 2; /* Span two columns */
+}
+
+.button.equals:hover {
+    background-color: #38b755;
+}
